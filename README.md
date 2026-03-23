@@ -2,20 +2,71 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Madon Daycare & Aftercare
 
-This contains everything you need to run your app locally.
+A modern, responsive website for Madon Daycare & Aftercare Centre, providing information about childcare services for children from 3 months to Grade 7.
 
-View your app in AI Studio: https://ai.studio/apps/239461e7-04d7-46c9-b6c4-14b83dab4b77
+## Features
 
-## Run Locally
+- **Services Overview** - Daycare, Aftercare, Transportation, and Nutrition programs
+- **Enrollment System** - Multi-step online enrollment form
+- **Admin Dashboard** - Interactive dashboard with statistics and child management
+- **Contact Form** - Easy way for parents to get in touch
+- **Responsive Design** - Works on all devices
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Motion (Framer Motion)
+- Lucide Icons
+
+## Getting Started
+
+**Prerequisites:** Node.js 18+
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# madon-day-care
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+├── app/                    # Next.js pages
+│   ├── page.tsx           # Home page
+│   ├── about/             # About page
+│   ├── services/          # Services page
+│   ├── contact/           # Contact page
+│   ├── enroll/            # Enrollment page
+│   ├── login/             # Login page
+│   └── dashboard/         # Admin dashboard
+├── components/             # Reusable UI components
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Section.tsx
+│   └── DashboardLayout.tsx
+├── hooks/                  # Custom React hooks
+└── lib/                    # Utility functions
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## License
+
+Proprietary - All rights reserved

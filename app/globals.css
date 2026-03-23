@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+  --color-soft-blue: #1e3a5f;
+  --color-soft-green: #064e3b;
+  --color-soft-yellow: #451a03;
+}
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.daycare-card {
+  @apply rounded-3xl border border-slate-800 bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-medium transition-all duration-200 active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full font-medium transition-all duration-200 active:scale-95;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-slate-800 hover:border-blue-500 rounded-full font-medium transition-all duration-200 active:scale-95;
+}
